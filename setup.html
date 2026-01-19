@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Setup - Federico Mirás</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="twitter:site" content="@mirasfederico">
+	<meta name="twitter:creator" content="@mirasfederico">
+	<meta name="twitter:title" content="Setup - Federico Mirás">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<style type="text/css">
+		html,
+		body {
+			background: black;
+			margin: 0;
+			padding: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		a {
+			color: white;
+			display: inline-block;
+			position: relative;
+			text-decoration: none;
+			transition: all 200ms;
+		}
+
+		a:after {
+			content: "";
+			height: 1px;
+			background: white;
+			position: absolute;
+			pointer-events: none;
+			bottom: -5px;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			transform: scale(0, 1);
+			transition: all 200ms;
+		}
+
+		a:hover:after {
+			opacity: 1;
+			transform: scale(1, 1);
+		}
+
+		body {
+			color: white;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+			-webkit-animation: fadein 2s;
+			   -moz-animation: fadein 2s;
+			    -ms-animation: fadein 2s;
+			     -o-animation: fadein 2s;
+			        animation: fadein 2s;
+		}
+
+		@keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+		@-moz-keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+		@-webkit-keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 60px 20px;
+		}
+
+		.header {
+			text-align: center;
+			margin-bottom: 60px;
+		}
+
+		.header h1 {
+			font-size: 3em;
+			margin: 0 0 10px 0;
+			font-weight: 600;
+		}
+
+		.header p {
+			color: #666;
+			font-size: 1.1em;
+			margin: 0;
+		}
+
+		.back-link {
+			display: inline-block;
+			margin-bottom: 30px;
+			color: #50e3c2;
+		}
+
+		.back-link:after {
+			background: #50e3c2;
+		}
+
+		.equipment-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			gap: 30px;
+			margin-bottom: 60px;
+		}
+
+		.equipment-card {
+			background: #111;
+			border: 1px solid #222;
+			border-radius: 8px;
+			overflow: hidden;
+			transition: all 300ms;
+		}
+
+		.equipment-card:hover {
+			border-color: #50e3c2;
+			transform: translateY(-5px);
+		}
+
+		.equipment-image {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			background: #0a0a0a;
+		}
+
+		.equipment-content {
+			padding: 20px;
+		}
+
+		.equipment-name {
+			font-size: 1.2em;
+			font-weight: 600;
+			margin: 0 0 10px 0;
+		}
+
+		.equipment-category {
+			color: #50e3c2;
+			font-size: 0.85em;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin: 0;
+		}
+
+		.footer {
+			color: #666;
+			font-size: 14px;
+			text-align: center;
+			padding: 20px;
+			border-top: 1px solid #222;
+		}
+
+		.footer a {
+			color: #666;
+			margin: 0 10px;
+		}
+
+		.footer a:hover {
+			color: white;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.header h1 {
+				font-size: 2em;
+			}
+
+			.equipment-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<a href="index.html" class="back-link">← Back</a>
+
+		<div class="header">
+			<h1>Setup</h1>
+			<p>The equipment I use daily</p>
+		</div>
+
+		<div class="equipment-grid">
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&h=400&fit=crop" alt="Nothing Ear (2)" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Earbuds</p>
+					<h3 class="equipment-name">Nothing Ear (2)</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600&h=400&fit=crop" alt="Sony WH-1000XM6" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Headphones</p>
+					<h3 class="equipment-name">Sony WH-1000XM6</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&h=400&fit=crop" alt="MacBook Pro M3 14 inch" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Laptop</p>
+					<h3 class="equipment-name">MacBook Pro M3 14"</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&h=400&fit=crop" alt="iPad Pro M4 13 inch" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Tablet</p>
+					<h3 class="equipment-name">iPad Pro M4 13"</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=400&fit=crop" alt="Blue Yeti Microphone" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Microphone</p>
+					<h3 class="equipment-name">Blue Yeti</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&h=400&fit=crop" alt="NuPhy Air 60 Wireless V2" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Keyboard</p>
+					<h3 class="equipment-name">NuPhy Air 60 V2</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&h=400&fit=crop" alt="Apple Magic Trackpad" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Trackpad</p>
+					<h3 class="equipment-name">Apple Magic Trackpad</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&h=400&fit=crop" alt="Apple Display" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Monitor</p>
+					<h3 class="equipment-name">Apple Studio Display</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600&h=400&fit=crop" alt="Anker 3-in-1 Charger Cube" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Charger</p>
+					<h3 class="equipment-name">Anker 3-in-1 Cube</h3>
+				</div>
+			</div>
+
+			<div class="equipment-card">
+				<img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=600&h=400&fit=crop" alt="Inpro Standing Desk" class="equipment-image">
+				<div class="equipment-content">
+					<p class="equipment-category">Desk</p>
+					<h3 class="equipment-name">Inpro Standing Desk</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<a href="index.html">Home</a>
+			<a href="https://github.com/fmiras" target="_blank">Github</a>
+			<a href="https://linkedin.com/in/fmiras" target="_blank">LinkedIn</a>
+			<a href="https://twitter.com/mirasfederico" target="_blank">Twitter</a>
+		</div>
+	</div>
+</body>
+
+</html>
